@@ -1,0 +1,40 @@
+nav {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+
+h1 {
+    color: #55F;
+    font-size: 3rem;
+}
+
+h1:hover {
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    flex-direction: row;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
