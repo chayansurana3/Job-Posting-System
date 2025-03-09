@@ -8,12 +8,14 @@ nav {
 }
 
 h1 {
-    color: #55F;
+    color: white;
     font-size: 3rem;
+    cursor: pointer;
 }
 
 h1:hover {
-    color: white;
+    color: teal;
+    text-decoration: underline;
 }
 
 nav ul {
@@ -37,4 +39,5 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
     cursor: pointer;
+    color: teal;
 }

@@ -1,0 +1,57 @@
+.home-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  a{
+    cursor: pointer;
+  }
+  
+  .header {
+    margin-bottom: 25px;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.811);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: teal;
+  }

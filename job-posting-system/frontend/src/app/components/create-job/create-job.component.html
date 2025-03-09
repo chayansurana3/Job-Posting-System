@@ -1,0 +1,22 @@
+<div class="post-job-container">
+    <header class="header">
+      <h1>Post a Job</h1>
+      <p>Fill in the details below to create a new job posting.</p>
+    </header>
+  
+    <form (ngSubmit)="postJob()">
+      <label for="title">Job Title:</label>
+      <input type="text" id="title" [(ngModel)]="job.title" name="title" required>
+  
+      <label for="description">Job Description:</label>
+      <textarea id="description" [(ngModel)]="job.description" name="description" required></textarea>
+  
+      <label for="location">Location:</label>
+      <input type="text" id="location" [(ngModel)]="job.location" name="location" required>
+  
+      <label for="salary">Salary:</label>
+      <input type="text" id="salary" [(ngModel)]="job.salary" name="salary" required>
+  
+      <button type="submit">Post Job</button>
+    </form>
+  </div>
