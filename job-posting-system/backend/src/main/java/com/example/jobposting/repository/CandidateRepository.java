@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface CandidateRepository extends JpaRepository<Candidate, Long> {
     List<Candidate> findByName(String name);
-    List<Candidate> findByResume(String resumeUrl);
+    List<Candidate> findByResumeUrl(String resumeUrl);
     List<Candidate> findByEmail(String email);
     List<Candidate> findByNameContaining(String name);
     List<Candidate> findByEmailStartingWith(String email);

@@ -56,4 +56,19 @@ public class JobPostingServiceImpl implements JobPostingService {
         List<JobPosting> jobPostings = jobPostingRepository.findByTitle(title);
         jobPostingRepository.deleteAll(jobPostings);
     }
+    
+    @Override
+    public List<JobPosting> findByDepartment(String department) {
+        return jobPostingRepository.findByDepartmentStartingWith(department);
+    }
+    
+    @Override
+    public List<JobPosting> findByLocation(String location) {
+        return jobPostingRepository.findByLocationStartingWith(location);
+    }
+    
+    @Override
+    public List<JobPosting> findByEmploymentType(String employmentType) {
+        return jobPostingRepository.findByEmploymentTypeStartingWith(employmentType);
+    }
 }

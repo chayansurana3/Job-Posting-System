@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/candidates")
+@CrossOrigin(origins = "http://localhost:4200")  
 public class CandidateController {
 
     @Autowired
@@ -43,7 +44,7 @@ public class CandidateController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteCandidateById(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteCandidate(@PathVariable Long id) {
         candidateService.deleteCandidateById(id);
         return ResponseEntity.noContent().build();
     }

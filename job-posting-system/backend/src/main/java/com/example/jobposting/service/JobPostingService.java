@@ -13,4 +13,7 @@ public interface JobPostingService {
     JobPosting updateJobPosting(Long id, JobPosting jobPostingDetails);
     void deleteJobPostingById(Long id);
     void deleteJobPostingByTitle(String title);
+    List<JobPosting> findByDepartment(String department);
+    List<JobPosting> findByLocation(String location);
+    List<JobPosting> findByEmploymentType(String employmentType);
 }
